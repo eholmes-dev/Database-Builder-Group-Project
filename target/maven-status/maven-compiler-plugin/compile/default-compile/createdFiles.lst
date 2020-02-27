@@ -1,0 +1,12 @@
+group8\ordersystemdatabasebuilder\handler\BuildSqlScript.class
+group8\ordersystemdatabasebuilder\handler\IBuildSqlScript.class
+group8\ordersystemdatabasebuilder\ui\UIHelper.class
+group8\ordersystemdatabasebuilder\handler\CreateSprocs.class
+group8\ordersystemdatabasebuilder\objects\data\OrderRecordDatabaseBuilderException.class
+group8\ordersystemdatabasebuilder\data\csv\CSVDataBuilderDAO.class
+group8\ordersystemdatabasebuilder\handler\CreateTables.class
+group8\ordersystemdatabasebuilder\OrderSystemDataBaseBuilder.class
+ordersystemdatabasebuilder\objects\Database.class
+ordersystemdatabasebuilder\objects\DataBaseTable.class
+ordersystemdatabasebuilder\objects\DatabaseField.class
+group8\ordersystemdatabasebuilder\handler\CSVHandler.class

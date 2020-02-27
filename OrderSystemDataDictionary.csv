@@ -1,0 +1,23 @@
+OrderRecord,,,,,,,,,,Data about an order record
+OrderRecord,order_number,VARCHAR(25),NOT NULL,PRIMARY KEY,,,Y,,,The order number of the order record
+OrderRecord,order_date,DATE,NOT NULL,,,,,cannot be in the past or the future,,The date of the order record
+OrderRecord,vendor_id,INT,NOT NULL,,,,,integer greater than 100,,The id number of the vendor
+Person,,,,,,,,,,Data about a person
+Person,person_id,INT,NOT NULL,PRIMARY KEY,AUTO_INCREMENT,,Y,,,A unique identifier for the person
+Person,last_name,VARCHAR(50),NOT NULL,,,,,,,Last name of the person
+Person,first_name,VARCHAR(50),NOT NULL,,,,,,,First name of the person
+Person,dob,DATE,NULL,,,,,,,Date of birth for the person
+ZipCode,,,,,,,,,,Data about a zip code
+ZipCode,zip,CHAR(10),NOT NULL,PRIMARY KEY,,,,,,The zip code
+ZipCode,city,VARCHAR(256),NOT NULL,,,,,,,The city for the zip code
+ZipCode,state,CHAR(2),NOT NULL,,,,,,,The two-letter abbreviation for the state
+Address,,,,,,,,,,Data about an address
+Address,address_id,INT,NOT NULL,PRIMARY KEY,AUTO_INCREMENT,,,,,A unique identifier for the address
+Address,street_address_1,VARCHAR(256),NOT NULL,,,,,,,The first street address
+Address,street_address_2,VARCHAR(256),NULL,,,,,,,The second street address
+Address,zipcode,CHAR(10),NOT NULL,,,Y,,,ZipCode (zip),The zip code for the address
+PersonAddress,,,,,,,,,,Data about a person address
+PersonAddress,person_id,INT,NOT NULL,PRIMARY KEY,,Y,N,,Person (person_id),The person associated with this address
+PersonAddress,address_id,INT,NOT NULL,PRIMARY KEY,,Y,N,,Address (address_id),The address associated with this person
+PersonAddress,start_date,DATE,NOT NULL,,,,N,Cannot be after end date,,The date when this person was associated with this address
+PersonAddress,end_date,DATE,NULL,,,,N,Cannot be before start date,,The date when this person was dissociated with this address
